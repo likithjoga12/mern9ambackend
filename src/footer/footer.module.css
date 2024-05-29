@@ -1,0 +1,10 @@
+.footer{
+    padding:20px 0px;
+    background-color: blueviolet;
+}
+.footer p ,.footer p a{
+    color: antiquewhite;
+}
+.footer p{
+    margin-bottom: 0px;
+}
