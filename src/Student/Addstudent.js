@@ -9,7 +9,7 @@ const Addstudent = () => {
     const [address,setAddress]=useState("");
     const submitHandler=(e)=>{
         e.preventDefault();
-        axios.post(" http://localhost:4000/student",{name,email,address})
+        axios.post(" https://localhost:4000/student",{name,email,address})
         .then((res) => {console.log(res.data);
            
             alert('Student Added Successfully')

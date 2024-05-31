@@ -13,7 +13,7 @@ const DeleteEmployee = () => {
 
     const {id}=useParams();
     useEffect(()=>{
-        axios.get(`http://mern9amfrontend.onrender.com/employee/${id}`)
+        axios.get(`https://mern9amfrontend.onrender.com/employee/${id}`)
         .then(response=>{
             setName(
                 response.data.name
@@ -32,7 +32,7 @@ const DeleteEmployee = () => {
     },[])
     const submitHandler=(e)=>{
         e.preventDefault();
-        axios.put(`http://mern9amfrontend.onrender.com/employee/${id}`,{name, email, address,salary,phone})
+        axios.put(`https://mern9amfrontend.onrender.com/employee/${id}`,{name, email, address,salary,phone})
         .then ((res)=>{
             alert("data updated successfully");
         })

@@ -12,7 +12,7 @@ const AddEmployee = () => {
     const [phone,setPhone]=useState("");
     const submitHandler=(e)=>{
         e.preventDefault();
-        axios.post(" http://mern9amfrontend.onrender.com/employee",{name,email,address, salary,phone})
+        axios.post(" https://mern9amfrontend.onrender.com/employee",{name,email,address, salary,phone})
         .then((res) => {console.log(res.data);
            
             alert('Student Added Successfully')

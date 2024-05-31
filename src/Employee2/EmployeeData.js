@@ -7,7 +7,7 @@ import axios from 'axios'
 const EmployeeData = () => {
   const [Data,setData]=useState([]);
   useEffect(()=>{
-    axios.get("http://mern9amfrontend.onrender.com/employee")
+    axios.get("https://mern9amfrontend.onrender.com/employee")
     .then((res)=>{
       setData(res.data);
       })
@@ -16,7 +16,7 @@ const EmployeeData = () => {
       const SearchHandler=(e)=>{
         let  key= e.target.value;
         if(key){
-          axios.get(`http://mern9amfrontend.onrender.com/search2/${key}`)
+          axios.get(`https://mern9amfrontend.onrender.com/search2/${key}`)
     .then((res)=>{
       setData(res.data);
       })

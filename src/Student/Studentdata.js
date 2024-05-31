@@ -7,7 +7,7 @@ import axios from 'axios'
 const Studentdata = () => {
   const [Data,setData]=useState([]);
   useEffect(()=>{
-    axios.get("http://mern9amfrontend.onrender.com/student")
+    axios.get("https://mern9amfrontend.onrender.com/student")
     .then((res)=>{
       setData(res.data);
       })
@@ -16,7 +16,7 @@ const Studentdata = () => {
       const SearchHandler=(e)=>{
         let  key= e.target.value;
         if(key){
-          axios.get(`http://mern9amfrontend.onrender.com/search/${key}`)
+          axios.get(`https://mern9amfrontend.onrender.com/search/${key}`)
     .then((res)=>{
       setData(res.data);
       })

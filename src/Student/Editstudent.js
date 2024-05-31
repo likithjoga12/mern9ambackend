@@ -9,7 +9,7 @@ const Editstudent = () => {
     const [address,setAddress]=useState("");
     const {id}=useParams();
     useEffect(()=>{
-        axios.get(`http://mern9amfrontend.onrender.com/student/${id}`)
+        axios.get(`https://mern9amfrontend.onrender.com/student/${id}`)
         .then(response=>{
             setName(
                 response.data.name
@@ -24,7 +24,7 @@ const Editstudent = () => {
     },[])
     const submitHandler=(e)=>{
         e.preventDefault();
-        axios.put(`http://mern9amfrontend.onrender.com/student/${id}`,{name, email, address})
+        axios.put(`https://mern9amfrontend.onrender.com/student/${id}`,{name, email, address})
         .then ((res)=>{
             alert("data updated successfully");
         })

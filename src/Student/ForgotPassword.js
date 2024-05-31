@@ -12,7 +12,7 @@ export const ForgotPassword= () => {
    
     const submitHandler=(e)=>{
         e.preventDefault();
-        axios.post(" http://mern9amfrontend.onrender.com/forgot",{email})
+        axios.post(" https://mern9amfrontend.onrender.com/forgot",{email})
         .then((res) => {
            console.log(res.data.password)
         })

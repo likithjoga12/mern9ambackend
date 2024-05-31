@@ -5,7 +5,7 @@ import axios from 'axios'
 const EmployeeOperations = () => {
   const [Data,setData]=useState([]);
   useEffect(()=>{
-    axios.get("http://mern9amfrontend.onrender.com/employee")
+    axios.get("https://mern9amfrontend.onrender.com/employee")
     .then((res)=>{
       setData(res.data);
       })
@@ -13,7 +13,7 @@ const EmployeeOperations = () => {
       },[])
       const deleteData=(sid)=>{
         alert(sid);
-        axios.delete(`http://mern9amfrontend.onrender.com/employee/${sid}`)
+        axios.delete(`https://mern9amfrontend.onrender.com/employee/${sid}`)
         .then((res)=>{
        alert("successful y deleted");
           })

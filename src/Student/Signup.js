@@ -13,7 +13,7 @@ export const Signup= () => {
     const [address,setAddress]=useState("");
     const submitHandler=(e)=>{
         e.preventDefault();
-        axios.post(" http://mern9amfrontend.onrender.com/signup",{name,
+        axios.post(" https://mern9amfrontend.onrender.com/signup",{name,
         email,password,address})
         .then((res) => {console.log(res.data);
            
